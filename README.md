@@ -15,8 +15,8 @@ npm i @kriscarilloxyz/hiboutik-js
 ```javascript
 const Hiboutik = require('@kriscarilloxyz/hiboutik-js')
 
-const client = new Hiboutik(username, password) 
-const readableFolders = await client.readableFolders()
+const client = new Hiboutik(host, username, password) 
+const productsList = await client.productsList()
 ```
 
 ## Contributing
