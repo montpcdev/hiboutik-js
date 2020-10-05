@@ -13,9 +13,9 @@ npm i @kriscarilloxyz/hiboutik-js
 ## Usage
 
 ```javascript
-const Nethunt = require('@kriscarilloxyz/hiboutik-js')
+const Hiboutik = require('@kriscarilloxyz/hiboutik-js')
 
-const client = new Nethunt(username, password) 
+const client = new Hiboutik(username, password) 
 const readableFolders = await client.readableFolders()
 ```
 
@@ -25,4 +25,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)`
