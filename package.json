@@ -1,0 +1,25 @@
+{
+  "name": "@kriscarilloxyz/hiboutik-js",
+  "version": "0.0.0",
+  "description": "hiboutik-js is a client for https://username.hiboutik.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/montpcdev/hiboutik-js.git"
+  },
+  "keywords": [
+    "hiboutik",
+    "hiboutik-rest",
+    "wrapper",
+    "client"
+  ],
+  "author": "kriscarilloxyz <kriscarilloxyz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/montpcdev/hiboutik-js/issues"
+  },
+  "homepage": "https://github.com/montpcdev/hiboutik-js#readme"
+}
