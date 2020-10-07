@@ -48,6 +48,25 @@ class Hiboutik {
   }
 
   /**
+  *
+  *
+  * @param {*} params
+  * @return {*} 
+  * @memberof Hiboutik
+  */
+  async brandsList (params) {
+    const options = {
+      auth: {
+        username: this.username,
+        password: this.password
+      }
+    }
+
+    return axios.get(`https://${this.host}/brands?${queryString.stringify(params)}`, options)
+      .then(res => res.data)
+  }
+
+  /**
    *
    *
    * @param {*} params
