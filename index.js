@@ -152,7 +152,7 @@ class Hiboutik {
       }
     }
 
-    return axios.get(`https://${this.host}/customers/search/${queryString.stringify(params)}`, options)
+    return axios.get(`https://${this.host}/customers/search?${queryString.stringify(params)}`, options)
       .then(res => res.data)
   }
 
