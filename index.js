@@ -53,7 +53,7 @@ class Hiboutik {
         password: this.password
       }
     }
-    return axios.get(`https://${this.host}/sales`, formdata, options)
+    return axios.post(`https://${this.host}/sales`, formdata, options)
       .then(res => res.data)
   }
 
