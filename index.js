@@ -46,6 +46,26 @@ class Hiboutik {
       .then(res => res.data)
   }
 
+
+  /**
+   *
+   *
+   * @param {*} params
+   * @return {*} 
+   * @memberof Hiboutik
+   */
+  async productsByID (id) {
+    const options = {
+      auth: {
+        username: this.username,
+        password: this.password
+      }
+    }
+
+    return axios.get(`https://${this.host}/products/${id}`, options)
+      .then(res => res.data)
+  }
+
   async sales (formdata) {
     const options = {
       auth: {
