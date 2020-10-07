@@ -6,7 +6,9 @@
   "scripts": {
     "test": "mocha tests -t 5000",
     "coverage": "nyc npm run test",
-    "coverage:html": "nyc --reporter=html npm run test"
+    "coverage:html": "nyc --reporter=html npm run test",
+    "release:patch": "npm version patch && git push && npm publish",
+    "release:minor": "npm version minor && git push && npm publish"
   },
   "repository": {
     "type": "git",
