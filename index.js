@@ -57,6 +57,18 @@ class Hiboutik {
       .then(res => res.data)
   }
 
+
+  async salesAddProduct (formdata) {
+    const options = {
+      auth: {
+        username: this.username,
+        password: this.password
+      }
+    }
+    return axios.post(`https://${this.host}/sales/add_product`, formdata, options)
+      .then(res => res.data)
+  }
+
   static toFormData (data) {
     const formData = new FormData()
     Object.keys(data).forEach(key => formData.append(key, data[key]))
