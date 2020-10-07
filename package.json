@@ -1,6 +1,6 @@
 {
   "name": "@kriscarilloxyz/hiboutik-js",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "hiboutik-js is a client for https://username.hiboutik.js",
   "main": "index.js",
   "scripts": {
