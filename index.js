@@ -98,6 +98,33 @@ class Hiboutik {
       .then(res => res.data)
   }
 
+  /**
+   *
+   *
+   * @param {*} formdata
+   * @memberof Hiboutik
+   */
+  async customers (formdata) {
+    const options = {
+      auth: {
+        username: this.username,
+        password: this.password
+      },
+      headers: formdata.getHeaders()
+    }
+
+    return axios.post(`https://${this.host}/customers`, formdata, options)
+      .then(res => res.data)
+  }
+
+
+  /**
+   *
+   *
+   * @param {*} params
+   * @return {*} 
+   * @memberof Hiboutik
+   */
   async customersBySearch (params) {
     const options = {
       auth: {
