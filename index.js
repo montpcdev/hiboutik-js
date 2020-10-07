@@ -39,7 +39,8 @@ class Hiboutik {
       auth: {
         username: this.username,
         password: this.password
-      }
+      },
+      headers: formdata.getHeaders()
     }
 
     return axios.post(`https://${this.host}/products`, formdata, options)
@@ -114,7 +115,8 @@ class Hiboutik {
       auth: {
         username: this.username,
         password: this.password
-      }
+      },
+      headers: formdata.getHeaders()
     }
     return axios.post(`https://${this.host}/sales`, formdata, options)
       .then(res => res.data)
@@ -126,7 +128,8 @@ class Hiboutik {
       auth: {
         username: this.username,
         password: this.password
-      }
+      },
+      headers: formdata.getHeaders()
     }
     return axios.post(`https://${this.host}/sales/add_product`, formdata, options)
       .then(res => res.data)
