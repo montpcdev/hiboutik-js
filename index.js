@@ -34,6 +34,25 @@ class Hiboutik {
    * @return {*} 
    * @memberof Hiboutik
    */
+  async products (formdata) {
+    const options = {
+      auth: {
+        username: this.username,
+        password: this.password
+      }
+    }
+
+    return axios.post(`https://${this.host}/products`, formdata, options)
+      .then(res => res.data)
+  }
+
+  /**
+   *
+   *
+   * @param {*} params
+   * @return {*} 
+   * @memberof Hiboutik
+   */
   async productsList (params) {
     const options = {
       auth: {
