@@ -1,4 +1,5 @@
 const queryString = require('querystring')
+const FormData = require('form-data')
 const axios = require('axios')
 
 /**
@@ -43,6 +44,16 @@ class Hiboutik {
 
     return axios.get(`https://${this.host}/products?${queryString.stringify(params)}`, options)
       .then(res => res.data)
+  }
+
+  async sales (formdata) {
+
+  }
+
+  static toFormData (data) {
+    const formData = new FormData()
+    Object.keys(data).forEach(key => formData.append(key, data[key]))
+    return formData
   }
 }
 

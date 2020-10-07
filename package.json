@@ -26,6 +26,7 @@
   "homepage": "https://github.com/montpcdev/hiboutik-js#readme",
   "dependencies": {
     "axios": "^0.20.0",
+    "form-data": "^3.0.0",
     "minimal-request-promise": "^1.5.0"
   },
   "devDependencies": {
