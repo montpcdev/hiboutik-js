@@ -78,6 +78,18 @@ class Hiboutik {
       .then(res => res.data)
   }
 
+  async customersBySearch (params) {
+    const options = {
+      auth: {
+        username: this.username,
+        password: this.password
+      }
+    }
+
+    return axios.get(`https://${this.host}/customers/search/${queryString.stringify(params)}`, options)
+      .then(res => res.data)
+  }
+
   async sales (formdata) {
     const options = {
       auth: {
