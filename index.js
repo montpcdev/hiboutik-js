@@ -47,7 +47,14 @@ class Hiboutik {
   }
 
   async sales (formdata) {
-
+    const options = {
+      auth: {
+        username: this.username,
+        password: this.password
+      }
+    }
+    return axios.get(`https://${this.host}/sales`, formdata, options)
+      .then(res => res.data)
   }
 
   static toFormData (data) {
